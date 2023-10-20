@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Howa maglumaty</title>
+    <script src="jquery.js" defer></script>
+    <script src="app.js" defer></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="search-container">
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search city" />
+        <img id="searchButton" src="search.svg" alt="search" />
+      </div>
+    </div>
+
+    <div class="weather">
+      <div class="city-container">
+        <div><h1 id="city"></h1></div>
+        <div class="date-container">
+          <div>
+            <h2 id="current-time"></h2>
+            <p id="current-date"></p>
+          </div>
+          <div>
+            <p id="nowDisplayer"></p>
+          </div>
+        </div>
+      </div>
+      <div class="weather-by-time">
+        <div class="cloud">
+          <img src="cloud.png" alt="cloud" />
+          <h3>Bulutly howa</h3>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td>NOW</td>
+              <td class="text-right" id="now"></td>
+            </tr>
+            <tr>
+              <td>09:00</td>
+              <td class="text-right" id="morn"></td>
+            </tr>
+            <tr>
+              <td>13:00</td>
+              <td class="text-right" id="day"></td>
+            </tr>
+            <tr>
+              <td>18:00</td>
+              <td class="text-right" id="night"></td>
+            </tr>
+            <tr>
+              <td>22:00</td>
+              <td class="text-right" id="eve"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

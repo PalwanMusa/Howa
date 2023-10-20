@@ -1,0 +1,141 @@
+:root {
+  --main-color: #ffffff;
+}
+
+body {
+  font-family: "Mooli", sans-serif;
+  background-image: url("./background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  margin: 0;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  background-image: url("./background.jpg");
+  background-position: left;
+  background-size: cover;
+  max-width: fit-content;
+  margin: 4rem auto;
+  box-shadow: 0 0 5px 1px rgba(42, 42, 42);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.city-container {
+  min-width: 400px;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#city {
+  text-align: left;
+  font-size: 26px;
+  padding: 0 1rem;
+}
+
+.weather-by-time {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(64, 62, 62, 0.9));
+  color: var(--main-color);
+  min-width: 250px;
+}
+
+.cloud {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50%;
+}
+
+.cloud > img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+.cloud > h3 {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+table {
+  border-top: 1px solid white;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+td {
+  padding: 0.25rem;
+}
+
+tr {
+  box-shadow: 0 0.5px 0 0 white;
+}
+
+.date-container {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#current-time {
+  margin-bottom: 0;
+}
+#current-date {
+  margin-top: 0.25rem;
+}
+
+#nowDisplayer {
+  font-size: 75px;
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  width: 650px;
+  position: relative;
+  margin: 1rem;
+}
+
+.search > input {
+  width: 100%;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+}
+.search > input:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 1px 2px #dfdfdf75;
+}
+
+.search > img {
+  position: absolute;
+  top: 5px;
+  right: -1rem;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.search > img:hover {
+  transform: scale(1.05);
+}
