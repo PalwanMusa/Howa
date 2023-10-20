@@ -17,6 +17,8 @@ let day;
 let night;
 let eve;
 
+console.log("hello");
+
 const fetchData = async (myCity) => {
   const response = await axios.get(weatherUrl + myCity + API);
   console.log(response);
